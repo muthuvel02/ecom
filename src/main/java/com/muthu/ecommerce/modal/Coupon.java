@@ -30,6 +30,6 @@ public class Coupon {
     private double minimumOrderValue;
 
     private boolean isActive = true;
-    @ManyToMany(mappedBy = "userCoupons") // it will not create an extra table it will just go the user and just map the usedCopons field
+    @ManyToMany(mappedBy = "usedCoupons") // it will not create an extra table, it will just go the user and just map the usedCopons field
     private Set<User> usedByUsers = new HashSet<>();
 }

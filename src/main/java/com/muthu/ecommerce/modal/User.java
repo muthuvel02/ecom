@@ -33,5 +33,5 @@ public class User {
     private Set<Address> addresses = new HashSet<>();
     @OneToMany
     @JsonIgnore // when ever, we are fetching the information form the frontend to ingnor we are using them..
-    private Set<Coupon> userCoupons = new HashSet<>();
+    private Set<Coupon> usedCoupons = new HashSet<>();
 }
