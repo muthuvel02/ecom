@@ -13,7 +13,7 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode
+
 public class Product {
     @jakarta.persistence.Id
     @GeneratedValue(strategy = GenerationType.AUTO)

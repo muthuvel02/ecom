@@ -30,12 +30,10 @@ public class Review {
 
     @JsonIgnore
     @ManyToOne
-    @Column( nullable = false)
     private Product product; //one product has multiple review;
 
     @JsonIgnore
     @ManyToOne
-    @Column( nullable = false)
     private User user; //one user has multiple review;
 
     @Column(nullable = false)
